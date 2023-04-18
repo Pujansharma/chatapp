@@ -4,7 +4,7 @@ import { Server } from "socket.io";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
 import onSocket from "./socket.js";
-
+import {WebSocketServer} from "ws"
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
