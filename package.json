@@ -1,9 +1,12 @@
 {
+  "homepage": "https://pujansharma.github.io/chatapp",
   "name": "chat_app",
   "version": "1.0.0",
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "server": "nodemon server.js"
   },
   "keywords": [],
@@ -11,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "gh-pages": "^5.0.0",
     "socket.io": "^4.6.1"
   },
   "devDependencies": {
